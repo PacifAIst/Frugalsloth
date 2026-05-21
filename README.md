@@ -4,7 +4,11 @@
 
 Train neural networks (MLP from scratch), fine-tune transformers via ONNX, and export production-ready models — all in your browser.
 
-![FrugalSloth Icon](public/icon.png)
+![FrugalSloth](images/1.png)
+![FrugalSloth](images/2.png)
+![FrugalSloth](images/3.png)
+![FrugalSloth](images/4.png)
+![FrugalSloth](images/5.png)
 
 ## Quick Start
 

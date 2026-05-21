@@ -153,4 +153,4 @@ feature1,feature2,feature3,label
 
 ## License
 
-GNU AFFERO GENERAL PUBLIC LICENSE
+[GNU AFFERO GENERAL PUBLIC LICENSE V3](https://github.com/PacifAIst/Frugalsloth/blob/main/LICENSE)

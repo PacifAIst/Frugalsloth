@@ -60,19 +60,6 @@ Browser (Your Device)
 
 No server. No API keys. No subscription.
 
-## GPU Setup (Important)
-
-FrugalSloth uses TF.js with WebGL backend. For best performance:
-
-**Chrome/Edge:**
-1. Go to `chrome://flags` or `edge://flags`
-2. Ensure "WebGL 2.0" is **Enabled**
-3. **Do NOT add any command-line flags** to Chrome shortcuts (especially not `--use-angle=gl`)
-4. If TF.js falls back to CPU backend, restart browser and try Edge
-
-**Verify GPU acceleration:**
-Look for "backend: webgl" in the System Log console. If it says "backend: cpu", GPU acceleration isn't active.
-
 ## File Structure
 
 ```

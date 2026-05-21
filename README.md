@@ -144,3 +144,7 @@ Custom ONNX model upload requires local execution of the code. GitHub Pages depl
 ## License
 
 [GNU AFFERO GENERAL PUBLIC LICENSE V3](https://github.com/PacifAIst/Frugalsloth/blob/main/LICENSE)
+
+---
+
+<p align="center">Made with ❤️ for the Local AI Community by PacifAIst</p>

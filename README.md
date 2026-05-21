@@ -138,6 +138,9 @@ feature1,feature2,feature3,label
 - **v0.2.0** — Full UI overhaul, dual theme, docs tab
 - **v0.1.0** — Initial release, MLP training, ONNX export
 
+## Known Issues in this BETA
+Custom ONNX model upload requires local execution of the code. GitHub Pages deployment and Desktop App have WASM path limitations, pending to be fixed in the final release.
+
 ## License
 
 [GNU AFFERO GENERAL PUBLIC LICENSE V3](https://github.com/PacifAIst/Frugalsloth/blob/main/LICENSE)

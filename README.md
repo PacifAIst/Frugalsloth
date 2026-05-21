@@ -1,4 +1,4 @@
-# FrugalSloth v0.3.3 [[LIFE DEMO](https://pacifaist.github.io/Frugalsloth/)] BETA
+# FrugalSloth v0.3.3 [[LIVE DEMO](https://pacifaist.github.io/Frugalsloth/)] BETA
 
 **Universal Edge AI Trainer & Inference Engine** — 100% browser-native, zero backend, zero data leaves your device.
 

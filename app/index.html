@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>FrugalSloth</title>
+    <script>
+      // AGGRESSIVE CACHE BUST: deregister old service workers + clear all caches
+      (function() {
+        const BUILD_VERSION = 'v0.3.3';
+        const stored = localStorage.getItem('fs_version');
+        
+        // Always deregister old service workers (they cache old JS)
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(function(regs) {
+            regs.forEach(function(reg) { reg.unregister(); });
+          });
+        }
+        // Always clear all caches
+        if ('caches' in window) {
+          caches.keys().then(function(names) {
+            names.forEach(function(n) { caches.delete(n); });
+          });
+        }
+        
+        if (stored && stored !== BUILD_VERSION) {
+          console.log('[FrugalSloth] New version ' + BUILD_VERSION + ', hard reloading...');
+          localStorage.setItem('fs_version', BUILD_VERSION);
+          location.reload();
+        } else {
+          localStorage.setItem('fs_version', BUILD_VERSION);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <!-- COI service worker for SharedArrayBuffer support -->
+    <script>
+      if (typeof window !== 'undefined' && !window.crossOriginIsolated) {
+        var coiScript = document.createElement('script');
+        coiScript.src = '/coi-serviceworker.js?v=0.3.3';
+        coiScript.async = true;
+        document.head.appendChild(coiScript);
+      }
+    </script>
+  </body>
+</html>
